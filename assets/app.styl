@@ -1,0 +1,53 @@
+@import "inc/_vars.styl"
+@import "inc/_mixins.styl"
+
+body
+  margin 0
+  padding 0
+  font-size 16px
+  font-family 'Source Sans Pro', sans-serif
+  background $bg_color
+h1,h2,h3,h4,h5,h6,p
+  margin 0
+  font-weight normal
+div, article, aside, section
+  box-sizing border-box
+b, strong
+  font-weight normal
+  __fontMedium()
+
+.app
+  background $bg_color
+  .container
+    __flex()
+    flex-wrap wrap
+    h1
+      __fontMedium()
+      font-size 28px
+      line-height 35px
+      color $text_color
+      margin-bottom $p
+      @media $sm
+        font-size 20px
+  &-btn
+    height $btn_height
+    line-height $btn_height
+    background $bg_color
+    box-shadow 0 2px 4px rgba(0, 0, 0, 0.1)
+    border-radius 10px
+    padding 0 $p2
+    border none !important
+    outline none !important
+    transition all 0.3s
+    &.primary
+      background $primary
+      color: $bg_color_secondary
+    &.block
+      width 100%
+    &:active
+      opacity 0.7
+    &.disabled
+      cursor not-allowed
+      background #EEEEEE
+      color #B4B4B4
+      box-shadow none

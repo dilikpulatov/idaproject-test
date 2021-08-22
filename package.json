@@ -1,0 +1,24 @@
+{
+  "name": "idaproject-test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "db": "json-server --watch db.json --port 3030",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.7",
+    "bignumber.js": "^9.0.1",
+    "vue-currency-input": "^1.22.6"
+  },
+  "devDependencies": {
+    "json-server": "^0.16.3",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^3.0.2"
+  }
+}
